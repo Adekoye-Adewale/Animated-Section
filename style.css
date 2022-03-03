@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(71, 16, 85);
+}
+
+
+h1 {
+    text-align: center;
+    margin: 50px auto 120px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.main {
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.service {
+    background: rgb(121, 36, 121);
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 25px -5px rgb(253, 253, 253);
+    transition: transform .8s;
+    height: 372px;
+    margin: 50px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.service-logo {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    background: rgb(121, 36, 121);
+    border: 18px solid rgb(45, 6, 54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service h4 {
+    height: 35px;
+    width: 80%;
+    margin: 50px auto;
+    background: rgb(121, 36, 121);
+    position: relative;
+}
+
+.service h4::after,
+.service h4::before {
+    content: '';
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    z-index: -1;
+}
+
+.service h4::after {
+    background: linear-gradient(to right, #fff, rgb(71, 16, 85));
+    right: -5px;
+    top: -5px;
+}
+
+.service h4::before {
+    background: linear-gradient(to right, rgb(71, 16, 85), #fff);
+    left: -5px;
+    bottom: -5px;
+}
+
+.main:hover .service {
+    transform: translateY(-40px);
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 180px;
+}
+
+.service-colum {
+    flex: 3;
+}
+
+i {
+    font-size: 50px;
+}
